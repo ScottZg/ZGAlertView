@@ -1,2 +1,2 @@
 # ZGAlertView
-不入流的弹出框，实现方式有两种：直接修改frame设置uiview animation；使用UIKit力学；
+Do not inflow of the pop-up box, there are two ways:   modifing the frame directly and Setting uiview animation; Using UIKit mechanics;
