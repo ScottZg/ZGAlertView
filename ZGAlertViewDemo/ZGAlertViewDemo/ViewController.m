@@ -25,16 +25,22 @@
 #pragma mark - style1 alertView
 - (IBAction)showStyle1Action:(UIButton *)sender {
     _style1AlertView = [[ZGAlertView alloc] init];
-    
+    //custom view
     UIView *customView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, 400)];
+   //close button
     UIButton *closeButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [closeButton setTitle:@"Close" forState:UIControlStateNormal];
     [closeButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [closeButton addTarget:self action:@selector(hideTopAction) forControlEvents:UIControlEventTouchUpInside];
     closeButton.frame = CGRectMake(200-47-10, 10, 47, 22);
     [customView addSubview:closeButton];
-    _style1AlertView.containerView = customView;
+  //label
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(customView.center.x-50, customView.center.y-20, 100, 40)];
     
+    label.text = @"Hello world";
+    [customView addSubview:label];
+    
+    _style1AlertView.containerView = customView;
     [_style1AlertView show];
     
 }
