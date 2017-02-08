@@ -35,7 +35,7 @@
     closeButton.frame = CGRectMake(200-47-10, 10, 47, 22);
     [customView addSubview:closeButton];
   //label
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(customView.center.x-50, customView.center.y-20, 100, 40)];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(customView.center.x-45, customView.center.y-20, 90, 40)];
     
     label.text = @"Hello world";
     [customView addSubview:label];
